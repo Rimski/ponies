@@ -8,5 +8,9 @@
     "start": "node server.js"
   },
   "author": "Tanner S.R. Ward",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.14.0"
+  }
 }
