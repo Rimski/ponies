@@ -1,8 +1,8 @@
 var app = angular.module("MainApp");
 var ponys = [];
 app.service("ponyHttp", ["$http", function($http) {
-//   var baseUrl = "http://api.vschool.io/TannerSRWard/pony";
-   var baseUrl = "http://api.vschool.io/jackmcb/pony";
+   var baseUrl = "http://api.vschool.io/TannerSRWard/pony";
+//   var baseUrl = "http://api.vschool.io/jackmcb/pony";
     this.addPony = function(pony) {
     $http.post(baseUrl, pony).then(function(response) {
         ponys.push(response.data);
